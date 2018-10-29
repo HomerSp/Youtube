@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Youtube
+GenericName=Video Player
+Comment=Watch videos using Youtube
+Icon=youtube
+Exec=/usr/bin/Youtube
+Terminal=false
+Type=Application
+Categories=Video;Player;AudioVideo;

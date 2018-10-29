@@ -1,0 +1,89 @@
+qml Main {
+      name: "Pure Blue";
+}
+
+qml MenuBar {
+	background-color: #0d47a1;
+	color: #fff;
+	border-bottom-color: #0d47a1;
+}
+qml MenuBarItem {
+	background-color: transparent;
+	color: #fff;
+}
+qml MenuBarItem:active {
+	background-color: #fff;
+	color: #0d47a1;
+}
+qml MenuBarItem:hover {
+	background-color: #ccc;
+	color: #0d47a1;
+}
+qml MenuItem {
+	background-color: #fff;
+	color: #0d47a1;
+}
+qml MenuItem:active {
+	background-color: #0d47a1;
+	color: #fff;
+}
+qml MenuItem:hover {
+	background-color: #0d47a1;
+	color: #fff;
+}
+qml MenuSeparator {
+	background-color: transparent;
+	color: #0d47a1;
+}
+
+html:not([style-scope]):not(.style-scope) {
+      --ytmusic-color-surface-1: #bbdefb;
+      --ytmusic-color-surface-2: #90caf9;
+      --ytmusic-color-surface-3: #0d47a1;
+      --ytmusic-color-surface-4: #64b5f6;
+
+      --ytmusic-color-text-1: #131313;
+      --ytmusic-color-text-2: #303030;
+      --ytmusic-color-text-3: #606060;
+
+      --ytmusic-color-icon-active: #000;
+      --ytmusic-color-icon-inactive: #909090;
+
+      --ytmusic-color-badge: #303030;
+      --ytmusic-color-text-idle: #606060;
+      --ytmusic-color-scrubber-bar-1: #0d47a1;
+      --ytmusic-color-fab-bg: #131313;
+      --ytmusic-color-fab-icon: #fff;
+      --ytmusic-color-divider: rgba(0, 0, 0, .08);
+      --ytmusic-color-input-label-focused: #0b83e5;
+      --ytmusic-color-input-border: #aaa;
+      --ytmusic-color-input-border-focused: #0b83e5;
+
+      --ytmusic-background: var(--ytmusic-color-surface-1);
+      --ytmusic-active-tab-color: #0d47a1;
+      --ytmusic-inactive-tab-color: #1976d2;
+}
+
+ytmusic-app-layout[content-scrolled_], ytmusic-nav-bar[scrolled] {
+      --ytmusic-active-tab-color: #e3f2fd;
+      --ytmusic-inactive-tab-color: #90caf9;
+}
+
+a.ytmusic-pivot-bar-item-renderer {
+      --yt-endpoint-hover-color: var(--ytmusic-active-tab-color);
+}
+.image.ytmusic-immersive-header-renderer ~ .content-container-wrapper.ytmusic-immersive-header-renderer {
+      background-color: #bbdefbbf;
+}
+
+.title.ytmusic-immersive-header-renderer, .description.ytmusic-immersive-header-renderer, ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer {
+      color: var(--ytmusic-color-text-1);
+}
+
+yt-icon {
+	--ytmusic-play-button-icon-color: var(--ytmusic-color-text-2);
+}
+
+paper-listbox.ytmusic-menu-popup-renderer {
+	--paper-listbox-background-color: var(--ytmusic-color-surface-4);
+}

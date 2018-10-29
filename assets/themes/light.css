@@ -1,0 +1,95 @@
+/* Theme data */
+qml Main {
+      name: "Light";
+}
+
+/* Menu styling */
+qml MenuBar {
+	background-color: #ebebeb;
+	color: #000000;
+	border-bottom-color: #ebebeb;
+}
+qml MenuBarItem {
+	background-color: transparent;
+	color: #000000;
+}
+qml MenuBarItem:active, qml MenuItem {
+	background-color: #000000;
+	color: #ebebeb;
+}
+qml MenuBarItem:hover {
+	background-color: #333;
+	color: #ebebeb;
+}
+qml MenuItem:active, qml MenuItem:hover {
+	background-color: #ebebeb;
+	color: #000;
+}
+qml MenuItem:hover {
+	color: #333;
+}
+qml MenuItem:disabled {
+      color: #999;
+}
+qml MenuSeparator {
+	background-color: transparent;
+	color: #ebebeb;
+}
+
+/* Youtube Music styling */
+html:not([style-scope]):not(.style-scope) {
+      --ytmusic-color-surface-1: #fff;
+      --ytmusic-color-surface-2: #f4f4f4;
+      --ytmusic-color-surface-3: #ebebeb;
+      --ytmusic-color-surface-4: #e2e2e2;
+
+      --ytmusic-color-text-1: #131313;
+      --ytmusic-color-text-2: #606060;
+      --ytmusic-color-text-3: #909090;
+
+      --ytmusic-color-icon-active: #000;
+      --ytmusic-color-icon-inactive: #909090;
+
+      --ytmusic-color-badge: #606060;
+      --ytmusic-color-text-idle: #909090;
+      --ytmusic-color-scrubber-bar-1: #ff0000;
+      --ytmusic-color-fab-bg: #131313;
+      --ytmusic-color-fab-icon: #fff;
+      --ytmusic-color-divider: rgba(0, 0, 0, .08);
+      --ytmusic-color-input-label-focused: #0b83e5;
+      --ytmusic-color-input-border: #aaa;
+      --ytmusic-color-input-border-focused: #0b83e5;
+
+      --ytmusic-background: var(--ytmusic-color-surface-1);
+      --ytmusic-active-tab-color: var(--ytmusic-color-text-1);
+      --ytmusic-inactive-tab-color: var(--ytmusic-color-text-2);
+      --yt-endpoint-hover-color: var(--ytmusic-color-text-1);
+}
+
+ytmusic-app-layout #nav-bar-background.ytmusic-app-layout {
+      --ytmusic-active-tab-color: var(--ytmusic-color-text-1);
+      --ytmusic-inactive-tab-color: var(--ytmusic-color-text-2);
+}
+
+ytmusic-app-layout[player-ui-state_="PLAYER_PAGE_OPEN"] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout[content-scrolled_] #nav-bar-background.ytmusic-app-layout {
+      --ytmusic-active-tab-color: var(--ytmusic-color-text-1);
+      --ytmusic-inactive-tab-color: var(--ytmusic-color-text-2);
+}
+
+a.ytmusic-pivot-bar-item-renderer {
+      --yt-endpoint-hover-color: var(--ytmusic-active-tab-color);
+}
+.image.ytmusic-immersive-header-renderer ~ .content-container-wrapper.ytmusic-immersive-header-renderer {
+      background-color: rgba(255, 255, 255, .75);
+}
+.title.ytmusic-immersive-header-renderer, .description.ytmusic-immersive-header-renderer, ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer {
+      color: var(--ytmusic-color-text-1);
+}
+
+yt-icon {
+	--ytmusic-play-button-icon-color: var(--ytmusic-color-text-2);
+}
+
+paper-listbox.ytmusic-menu-popup-renderer {
+	--paper-listbox-background-color: var(--ytmusic-color-surface-4);
+}
